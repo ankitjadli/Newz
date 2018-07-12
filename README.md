@@ -6,7 +6,8 @@ Simple News App
 
 
 UI is designed on Adobe XD 
-Download this UI here.
+Download this UI [Here](https://drive.google.com/open?id=14soOvg7wxN6k-Btbo4O_RKHHso0A3YVc).
+
 
 
 
