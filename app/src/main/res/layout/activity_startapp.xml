@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startapp">
+
+    <ImageView
+    android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+    android:layout_height="425dp"
+    android:src="@drawable/appart"
+    android:layout_gravity="center"
+        android:id="@+id/tempart"
+    />
+
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/themdown"
+
+        android:layout_marginLeft="13dp"
+  android:layout_below="@+id/appname"
+        android:layout_marginTop="5dp"
+    android:layout_marginBottom="-256dp"
+
+    />
+    <TextView
+        android:layout_width="340dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/appname"
+        android:layout_height="wrap_content"
+        android:background="@drawable/appinfo"
+        android:layout_below="@+id/tempart"
+        android:layout_marginLeft="8dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/getstarted"
+        android:id="@+id/setmeup"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tempart"/>
+
+
+</RelativeLayout>
