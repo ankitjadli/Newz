@@ -3,13 +3,13 @@
     package="com.example.ankit.newz">
 
     <application
+        android:name=".Newz"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name=".Newz">
+        android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".userstatus" />
         <activity android:name=".splashscreen">
@@ -24,7 +24,8 @@
         <activity android:name=".signin" />
         <activity android:name=".Openclicknews" />
         <activity android:name=".delhiclick" />
-        <activity android:name=".hindiclick"></activity>
+        <activity android:name=".hindiclick" />
+        <activity android:name=".aboutus"></activity>
     </application>
 
 </manifest>

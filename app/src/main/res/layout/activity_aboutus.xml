@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutus">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/aboutup"
+
+        />
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:id="@+id/applogo"
+        android:src="@drawable/ourlogo"/>
+    <Button
+        android:layout_width="95dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/applogo"
+        android:id="@+id/projectlink"
+        android:layout_marginLeft="110dp"
+        android:background="@drawable/githublogo"/>
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/applogo"
+        android:layout_marginLeft="220dp"
+        android:id="@+id/xdlink"
+        android:background="@drawable/xdlogo"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xdlink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/githubprofile"
+        android:background="@drawable/githubprofile"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/aboutdown"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="7dp"
+        />
+
+</RelativeLayout>

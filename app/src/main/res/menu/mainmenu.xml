@@ -5,5 +5,9 @@
         android:id="@+id/mainlogoutbutton"
         android:title="Logout"
         />
+    <item
+        android:id="@+id/aboutapp"
+        android:title="About"
+        />
 
 </menu>

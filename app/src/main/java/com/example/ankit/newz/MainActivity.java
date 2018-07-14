@@ -52,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(loggegout);
             finish();
         }
+        if(item.getItemId()==R.id.aboutapp)
+        {
+            Intent about_device = new Intent(MainActivity.this,aboutus.class);
+            startActivity(about_device);
+        }
 
         return true;
     }
