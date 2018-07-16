@@ -7,8 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -28,6 +31,8 @@ public class signin extends AppCompatActivity {
     Button login ;
     FirebaseAuth mauth;
     private ProgressDialog mprogressdialog;
+    Animation lefttoright,downtoup,uptodown;
+    ImageView appsign;
 
 
     @Override
@@ -43,9 +48,19 @@ public class signin extends AppCompatActivity {
         mprogressdialog.setTitle("Logging In");
         mprogressdialog.setMessage("Please wait while we log you in");
         mprogressdialog.setCanceledOnTouchOutside(false);
+        appsign = (ImageView) findViewById(R.id.applogo);
+
+        lefttoright = AnimationUtils.loadAnimation(this,R.anim.lefttoright);
+        downtoup = AnimationUtils.loadAnimation(this,R.anim.downtoup);
+        uptodown = AnimationUtils.loadAnimation(this,R.anim.uptodown);
 
 
         signup = (Button) findViewById(R.id.signuofromin);
+
+        login.setAnimation(lefttoright);
+        signup.setAnimation(downtoup);
+        appsign.setAnimation(uptodown);
+
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

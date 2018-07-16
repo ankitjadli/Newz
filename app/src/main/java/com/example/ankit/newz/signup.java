@@ -7,8 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -29,6 +32,8 @@ public class signup extends AppCompatActivity {
     Button registeruser;
     FirebaseAuth mauth;
     ProgressDialog registerdialog;
+    Animation uptodown,lefttoright;
+    ImageView appsign;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +48,14 @@ public class signup extends AppCompatActivity {
         registerdialog.setTitle("Registering user");
         registerdialog.setMessage("Please wait while we create your Account");
         registerdialog.setCanceledOnTouchOutside(false);
+
+        appsign = (ImageView) findViewById(R.id.applogo);
+
+        uptodown = AnimationUtils.loadAnimation(this,R.anim.uptodown);
+        lefttoright = AnimationUtils.loadAnimation(this,R.anim.lefttoright);
+
+        appsign.setAnimation(uptodown);
+        registeruser.setAnimation(lefttoright);
 
         registeruser.setOnClickListener(new View.OnClickListener() {
             @Override

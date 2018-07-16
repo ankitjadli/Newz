@@ -9,19 +9,31 @@
     <ImageView
     android:layout_width="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
     android:layout_height="425dp"
-    android:src="@drawable/appart"
+    android:src="@drawable/leftimage"
     android:layout_gravity="center"
         android:id="@+id/tempart"
     />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_height="425dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/rightimage"
+        android:layout_gravity="center"
+        android:id="@+id/tempartright"
+        />
 
     <ImageView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:src="@drawable/themdown"
-
+        android:id="@+id/bootommostimg"
         android:layout_marginLeft="13dp"
+        android:layout_centerHorizontal="true"
   android:layout_below="@+id/appname"
         android:layout_marginTop="5dp"
     android:layout_marginBottom="-256dp"
