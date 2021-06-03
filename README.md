@@ -1,7 +1,7 @@
 # Newz App
 
 My Internship Project (May-June 2018)
-Based on Firebase Realtime Database and Firebase Authentication.
+Based on Android Studio(Java), Adobe XD, Firebase Realtime Database and Firebase Authentication.
 
 ## UI
 ![iphonex 2x](https://user-images.githubusercontent.com/37221963/42654501-7076da4c-8636-11e8-93e7-460250910dc2.png)
